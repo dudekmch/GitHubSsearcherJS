@@ -3,8 +3,9 @@ import NavItem from './NavItem'
 
 const NavSection = () => (
     <ul>
-        <NavItem title={"Test"} directory={"/test"} />
-        <NavItem title={"Test2"} directory={"/test2"} />
+        <NavItem title={"Home"} directory={"/"} />
+        <NavItem title={"Search User"} directory={"/searchUser"} />
+        <NavItem title={"Search Repository"} directory={"/searchRepository"} />
     </ul>
 )
 

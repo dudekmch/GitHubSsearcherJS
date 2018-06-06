@@ -10,6 +10,7 @@ color: black;
 const NavItem = props => (
   <li>
     <StyledNavLink
+      exact
       to={props.directory}
       activeStyle={{
         fontWeight: "bold",

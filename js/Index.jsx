@@ -1,14 +1,14 @@
 import React from "react";
 import { render } from "react-dom";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import NavSection from './sidebar/NavSection'
+import Main from './Main'
 
 const App = () => (
   <BrowserRouter>
       <div className="app">
-        <Switch>
-          <Route exact path="/" component={NavSection} />
-        </Switch>
+          <Route component={NavSection} />
+          <Route path={"/"} component={Main} />
       </div>
   </BrowserRouter>
 );

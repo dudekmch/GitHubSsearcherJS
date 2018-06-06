@@ -13,7 +13,6 @@ const NavItem = props => (
       exact
       to={props.directory}
       activeStyle={{
-        fontWeight: "bold",
         color: "red"
       }}
     >

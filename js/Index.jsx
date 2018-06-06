@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "react-dom";
 import { BrowserRouter, Route } from "react-router-dom";
-import NavSection from './sidebar/NavSection'
+import NavSection from "./Sidebar/NavSection"
 import Main from './Main'
 
 const App = () => (

@@ -67,7 +67,7 @@
     "react-test-renderer": "15.5.4",
     "webpack-dev-server": "2.4.5"
   },
-  "name": "GitHub Searcher",
+  "name": "GitHubSearcher",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/dudekmch/GitHubSsearcherJS.git",

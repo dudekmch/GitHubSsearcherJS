@@ -7,8 +7,12 @@ import Main from './Main'
 import HeaderView from './Header/HeaderView'
 
 const MainContainerStyled = styled.div`
+width: 980px;
+margin-right: auto;
+margin-left: auto;
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
+align-items: flex-start;
 `
 const App = () => (
   <BrowserRouter>

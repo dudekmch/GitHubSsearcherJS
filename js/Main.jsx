@@ -5,19 +5,18 @@ import HomeView from "./Home/HomeView";
 import SearchUserView from './SearchUser/SearchUserView'
 import SearchRepositoryView from './SearchRepository/SearchRepositoryView'
 
-const MainContainerStyled = styled.div`
-border: solid 2px black;
+const MainContentContainerStyled = styled.div`
 flex-basis: 80%;
 `
 
 const Main = () => (
-  <MainContainerStyled>
+  <MainContentContainerStyled>
     <Switch>
       <Route  exact path="/" component={HomeView} />
       <Route  path="/searchUser" component={SearchUserView} />
       <Route  path="/searchRepository" component={SearchRepositoryView} />
     </Switch>
-  </MainContainerStyled>
+  </MainContentContainerStyled>
 );
 
 export default Main;

@@ -4,21 +4,32 @@ import { NavLink } from "react-router-dom";
 import { string } from 'prop-types'
 
 const StyledNavLink = styled(NavLink)`
-color: black;
+color: #586069;
+font-size: 1.25em;
+text-decoration: none;
 `;
 
+const StyledNavItem = styled.div`
+margin-top: 0.5em;
+flex: 1
+`
+
 const NavItem = props => (
-  <li>
+  <StyledNavItem>
     <StyledNavLink
       exact
       to={props.directory}
       activeStyle={{
-        color: "red"
+        color: "#24292e",
+        fontWeight:600,
+        borderBottom: '2px solid transparent',
+        borderBottomColor: '#e36209',
+        transition: '.2s'
       }}
     >
       {props.title}
     </StyledNavLink>
-  </li>
+  </StyledNavItem>
 );
 
 NavItem.propTypes = {

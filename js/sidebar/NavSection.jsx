@@ -2,19 +2,18 @@ import React from 'react'
 import styled from 'styled-components';
 import NavItem from './NavItem'
 
-const NavSectionStyled = styled.div`
-border: solid 2px black;
-flex-basis: 15%;
+const StyledItemList = styled.div`
+display: flex;
+flex-direction: column;
+align-content: space-between;
 `
 
 const NavSection = () => (
-    <NavSectionStyled>
-    <ul>
+    <StyledItemList>
         <NavItem title={"Home"} directory={"/"} />
         <NavItem title={"Search User"} directory={"/searchUser"} />
         <NavItem title={"Search Repository"} directory={"/searchRepository"} />
-    </ul>
-    </NavSectionStyled>
+    </StyledItemList>
 )
 
 export default NavSection;

@@ -5,7 +5,7 @@ const StyleLoggedUserName= styled.span`
 color: #fff;
 `
 const StyledContainerLoggedUserName = styled.div`
-flex: 0.1;
+flex: 0.2;
 align-self: center;
 `
 const LoggedUserName = () => (
